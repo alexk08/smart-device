@@ -1,0 +1,206 @@
+.promo {
+  padding-top: 230px;
+  padding-bottom: 143px;
+  position: relative;
+
+  background-image: url("../../img/board-desktop.png"), url("../../img/triangles-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(50% + 430px) 173px, calc(50% + 404px) 33px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/board-desktop@2x.png"), url("../../img/triangles-desktop.svg");
+    background-size: 705px auto, auto;
+  }
+}
+
+.promo .wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 0 25px;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  margin-left: -5px;
+  font-family: $font-roboto-c;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $white;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+  padding-left: 92px;
+  margin-bottom: 45px;
+  width: 718px;
+
+  font-size: 22px;
+  line-height: 34px;
+  color: $white;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 66px;
+    height: 2px;
+    display: block;
+
+    background-color: $white;
+    position: absolute;
+    top: 17px;
+    left: 0;
+  }
+}
+
+.promo__consultation {
+  padding: 17px 45px;
+  border-radius: 5px;
+  margin-left: 91px;
+  margin-bottom: 133px;
+  display: inline-block;
+
+  font-family: $font-roboto-c;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.promo__consultation-mobile {
+  display: none;
+}
+
+.promo__link-down {
+  display: block;
+  color: $white;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 16px;
+  transform: rotate(-90deg) translateY(-40px);
+
+  position: absolute;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .promo {
+    padding-top: 116px;
+    padding-left: 63px;
+    padding-bottom: 33px;
+
+    background-image: url("../../img/board-tablet.png"), url("../../img/triangles-tablet.svg");
+    background-position: calc(50% + 356px) 42px, calc(50% + 320px) -10px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/board-tablet@2x.png"), url("../../img/triangles-tablet.svg");
+      background-size: 465px auto, auto;
+    }
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 70px;
+    width: 400px;
+    margin-bottom: 29px;
+    margin-left: 0;
+  }
+
+  .promo__description {
+    font-size: 18px;
+    line-height: 156.8%;
+    width: 400px;
+    padding-left: 51px;
+    margin-bottom: 55px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  .promo__consultation {
+    padding: 17px 32px;
+    margin-left: 50px;
+  }
+
+  .promo__link-down {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .promo {
+    padding-top: 231px;
+    padding-left: 0;
+    padding-bottom: 31px;
+
+    background-image: url("../../img/board-mobile.png"), url("../../img/triangles-mobile.svg");
+    background-position: calc(70% + 14px) 37px, 151px -102px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/board-mobile@2x.png"), url("../../img/triangles-mobile.svg");
+      background-size: 301px auto, auto;
+    }
+  }
+
+  .promo .wrapper {
+    padding: 0 15px;
+    max-width: 500px;
+  }
+
+  .promo__title {
+    width: auto;
+    margin-bottom: 28px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__description {
+    width: auto;
+    margin-bottom: 42px;
+    font-size: 16px;
+  }
+
+  .promo__consultation {
+    margin: 0 auto;
+    display: block;
+    width: 287px;
+  }
+
+  .promo__consultation-mobile {
+    display: inline;
+  }
+
+  .promo__consultation-desktop {
+    display: none;
+  }
+}

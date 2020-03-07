@@ -1,0 +1,149 @@
+.page-header {
+  background-color: $bg-dark;
+  background-image: url("../../img/bg-top-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__top-row {
+  max-width: 1460px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 33px 25px 0 25px;
+
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  color: $white;
+  background-color: transparent;
+  font-family: $font-roboto-c;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  border: 1px solid $white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  margin: 0;
+}
+
+.page-header__call-button {
+  padding: 14px 29px 12px 24px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    border-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.page-header__mail {
+  display: flex;
+  align-items: center;
+  margin-right: 87px;
+  color: $white;
+  line-height: 18px;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.page-header__mail svg {
+  margin-right: 22px;
+  fill: $blue;
+}
+
+.page-header__mail:hover svg,
+.page-header__phone:hover svg,
+.page-header__mail:focus svg,
+.page-header__phone:focus svg {
+  fill: $white;
+}
+
+.page-header__phone {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  color: $white;
+  line-height: 18px;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.page-header__phone svg {
+  margin-right: 15px;
+  fill: $blue;
+}
+
+@media (max-width: $tablet-max-width) {
+  .page-header {
+    background-image: url("../../img/bg-top-tablet.png");
+  }
+
+  .page-header__top-row {
+    padding-top: 19px;
+  }
+
+  .page-header__mail span,
+  .page-header__phone span,
+  .page-header__call-button {
+    display: none;
+  }
+
+  .page-header__mail svg {
+    width: 25px;
+    height: 19px;
+    margin-right: 0;
+  }
+
+  .page-header__phone svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .page-header__mail {
+    margin-right: 33px;
+  }
+
+  .page-header__phone {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-header {
+    padding-bottom: 41px;
+    background-image: url("../../img/bg-top-mobile.png");
+  }
+
+  .page-header__top-row {
+    max-width: 500px;
+    padding: 17px 15px 0 15px;
+  }
+
+  .page-header__mail {
+    margin-right: 24px;
+  }
+}
