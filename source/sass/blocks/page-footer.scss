@@ -1,0 +1,124 @@
+.page-footer {
+  font-size: 13px;
+  line-height: 24px;
+  color: $bg-dark;
+  background-color: $bg-light;
+}
+
+.page-footer .wrapper {
+  border-bottom: 1px solid $socials-grey;
+}
+
+.page-footer__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 1485px;
+  margin: 0 auto;
+  padding: 65px 25px 58px;
+}
+
+.page-footer__top-row .inner {
+  min-width: 220px;
+}
+
+.page-footer__company {
+  display: none;
+}
+
+.page-footer__logo {
+  margin-bottom: 53px;
+}
+
+.page-footer__nav {
+  padding-left: 15px;
+}
+
+.page-footer__contacts {
+  min-width: 355px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .page-footer__socials {
+    align-self: center;
+  }
+
+  .page-footer__company {
+    display: block;
+    align-self: center;
+
+    text-transform: uppercase;
+    color: inherit;
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+    padding-left: 15px;
+    padding-top: 5px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__top-row {
+    flex-wrap: wrap;
+
+    padding: 19px 0 35px;
+  }
+
+  .page-footer__top-row .inner {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 720px;
+    width: 100%;
+    padding: 0 25px 25px;
+    border-bottom: 1px solid $socials-grey;
+  }
+
+  .page-footer__nav {
+    padding-top: 39px;
+    padding-left: 25px;
+  }
+
+  .page-footer__contacts {
+    min-width: 345px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-footer__top-row {
+    display: block;
+    padding: 46px 0 0;
+  }
+
+  .page-footer__nav {
+    padding: 30px 15px 25px;
+    border-bottom: 1px solid $socials-grey;
+  }
+
+  .page-footer__top-row .inner {
+    flex-direction: column;
+    align-items: center;
+
+    min-width: unset;
+    padding: 0 15px 54px;
+  }
+
+  .page-footer__company,
+  .page-footer__socials {
+    align-self: unset;
+  }
+
+  .page-footer__company {
+    padding: 26px 0 31px;
+  }
+}

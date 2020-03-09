@@ -1,16 +1,14 @@
 .logo {
   display: flex;
 
-  margin-right: auto;
+  &:active {
+    opacity: 0.75;
+  }
 }
 
 .logo:hover .logo__top-row,
 .logo:focus .logo__top-row {
   color: $blue;
-}
-
-.logo:active {
-  opacity: 0.75;
 }
 
 .logo__text {
@@ -35,6 +33,10 @@
   text-transform: capitalize;
 }
 
+.logo__top-row--footer {
+  color: $bg-dark;
+}
+
 .logo__bottom-row {
   font-family: $font-roboto;
   font-size: 12px;
@@ -44,12 +46,12 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .logo img {
+  .logo--header img {
     width: 38px;
     height: 38px;
   }
 
-  .logo__text {
+  .logo__text--header {
     display: none;
   }
 }

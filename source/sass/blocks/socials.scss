@@ -1,0 +1,24 @@
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  width: 112px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socials__link svg {
+  display: block;
+  fill: $socials-grey;
+}
+
+.socials__link:hover svg,
+.socials__link:focus svg {
+  fill: $blue;
+}
+
+.socials__link:active svg {
+  opacity: 0.75;
+}
