@@ -1,0 +1,225 @@
+.services {
+  background-color: $bg-dark;
+}
+
+.services .inner {
+  margin: 0 auto;
+  padding: 88px 25px 127px;
+  max-width: 1220px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 52px;
+
+  font-family: $font-roboto-c;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $white;
+}
+
+.services__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.services__item {
+  display: flex;
+  align-items: stretch;
+
+  max-width: 370px;
+  width: 32%;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  &--production {
+    background-image: url("../../img/production-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/production-desktop@2x.jpg");
+    }
+  }
+
+  &--install {
+    background-image: url("../../img/install-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/install-desktop@2x.jpg");
+    }
+  }
+
+  &--components {
+    background-image: url("../../img/light-desktop.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/light-desktop@2x.jpg");
+  }
+}
+
+.services__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services__link {
+  flex-grow: 1;
+
+  font-family: $font-roboto-c;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $white;
+
+  padding: 50px 100px calc(136% + 7px) 44px;
+
+  background-color: $dark-opacity;
+  position: relative;
+
+  &::before {
+    content: "";
+
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $blue;
+  }
+
+  &::after {
+    content: "";
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 22px;
+    bottom: 26px;
+    background-image: url("../../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: $dark-opacity;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .services .inner {
+    padding: 50px 25px 31px;
+  }
+
+  .services__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .services__list {
+    display: block;
+  }
+
+  .services__item {
+    max-width: none;
+    width: auto;
+    margin-bottom: 46px;
+
+    &--production {
+      background-image: url("../../img/production-tablet.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/production-tablet@2x.jpg");
+      }
+    }
+
+    &--install {
+      background-image: url("../../img/install-tablet.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/install-tablet@2x.jpg");
+      }
+    }
+
+    &--components {
+      background-image: url("../../img/light-tablet.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/light-tablet@2x.jpg");
+      }
+    }
+  }
+
+  .services__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .services__link {
+    width: 100%;
+    padding: 39px 445px 157px 45px;
+  }
+
+  .services__item--components .services__link {
+    padding: 49px 445px 147px 45px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .services .inner {
+    padding: 50px 15px 33px;
+  }
+
+  .services__title {
+    margin-bottom: 42px;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+
+    &--production {
+      background-image: url("../../img/production-mobile.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/production-mobile@2x.jpg");
+      }
+    }
+
+    &--install {
+      background-image: url("../../img/install-mobile.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/install-mobile@2x.jpg");
+      }
+    }
+
+    &--components {
+      background-image: url("../../img/light-mobile.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/light-mobile@2x.jpg");
+      }
+    }
+  }
+
+  .services__link {
+    padding: 20px 30px 177px 35px;
+  }
+
+  .services__item--components .services__link {
+    padding: 29px 30px 166px 35px;
+  }
+}
