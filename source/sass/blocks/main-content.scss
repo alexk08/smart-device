@@ -1,0 +1,12 @@
+.main-content .wrapper {
+  background-image: url("../../img/bg-features-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 92% 33%;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-content .wrapper {
+    background-image: url("../../img/bg-features-tablet.svg");
+    background-position: 283px 23%;
+  }
+}

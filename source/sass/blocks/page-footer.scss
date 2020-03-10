@@ -109,13 +109,8 @@
     flex-direction: column;
     align-items: center;
 
-    min-width: unset;
+    min-width: auto;
     padding: 0 15px 54px;
-  }
-
-  .page-footer__company,
-  .page-footer__socials {
-    align-self: unset;
   }
 
   .page-footer__company {

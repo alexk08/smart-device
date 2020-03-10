@@ -1,0 +1,115 @@
+.about-us {
+  max-width: 1220px;
+  padding: 0 25px 110px;
+  margin: 0 auto;
+
+  background-image: url("../../img/2005-desktop.png");
+  background-repeat: no-repeat;
+  background-position: -5px 5px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/2005-desktop@2x.png");
+    background-size: 220px auto;
+  }
+}
+
+.about-us .inner {
+  padding-left: 180px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-roboto-c;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+}
+
+.about-us p {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 980px;
+}
+
+.about-us__more-button {
+  display: inline-block;
+  margin-top: 20px;
+  color: $blue;
+  border-color: $blue;
+  padding: 14px 50px 13px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .about-us {
+    background-image: url("../../img/2005-tablet.png");
+    background-position: 0 0;
+
+    padding-bottom: 84px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/2005-tablet@2x.png");
+      background-size: 244px auto;
+    }
+  }
+
+  .about-us .inner {
+    padding-left: 188px;
+  }
+
+  .about-us p {
+    width: 98%;
+    height: 88px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .about-us__title {
+    margin-bottom: 22px;
+
+    font-size: 32px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about-us {
+    padding: 0 15px 50px 17px;
+
+    background-image: none;
+  }
+
+  .about-us .inner {
+    padding-left: 0;
+    max-width: 500px;
+
+
+    margin: 0 auto;
+  }
+
+  .about-us__title {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+  }
+
+  .about-us p {
+    margin-bottom: 0;
+    height: 172px;
+    width: auto;
+  }
+
+  .about-us__more-button {
+    margin-top: 32px;
+  }
+}
