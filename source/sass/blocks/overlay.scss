@@ -1,5 +1,5 @@
 .overlay {
-  background-color: $overlay;
+  background-color: $dark-tone;
 
   display: none;
   width: 100%;
@@ -11,6 +11,18 @@
   z-index: 9;
 }
 
-.overlay.show {
+.overlay.js-show {
   display: block;
+}
+
+@media (max-width: $tablet-max-width) {
+  .overlay.js-show {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .overlay.js-show {
+    display: none;
+  }
 }
