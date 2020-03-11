@@ -78,4 +78,36 @@
   });
 
   formCallback.addEventListener('submit', onFormSubmit);
+
+  var menuFooterNav = document.querySelector('.footer-nav__list');
+  var menuFooterContacts = document.querySelector('.footer-contacts__text');
+  var navElement = document.querySelector('.footer-nav');
+  var contactsElement = document.querySelector('.footer-contacts');
+
+  menuFooterNav.classList.remove('no-js');
+  menuFooterContacts.classList.remove('no-js');
+
+  navElement.addEventListener('click', function (evt) {
+    if (evt.target.classList.contains('button-menu')) {
+      menuFooterNav.classList.toggle('menu-close');
+      menuFooterContacts.classList.add('menu-close');
+    }
+  });
+
+  contactsElement.addEventListener('click', function (evt) {
+    if (evt.target.classList.contains('button-menu')) {
+      menuFooterContacts.classList.toggle('menu-close');
+      menuFooterNav.classList.add('menu-close');
+    }
+  });
+
+  var feedbackPhone = document.querySelector('.feedback__input--phone');
+  var modalPhone = document.querySelector('.modal-callback__input--phone');
+  var mask = {
+    mask: '+{7}(000)000-00-00',
+  };
+
+  IMask(feedbackPhone, mask);
+  IMask(modalPhone, mask);
+
 })();
