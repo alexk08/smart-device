@@ -1,14 +1,17 @@
 .button {
-  color: $white;
-  background-color: transparent;
+  margin: 0;
+  border: 1px solid $white;
+  border-radius: 5px;
+
   font-family: $font-roboto-c;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
-  border: 1px solid $white;
-  border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: $white;
 
-  margin: 0;
+  background-color: transparent;
+
+  cursor: pointer;
 }

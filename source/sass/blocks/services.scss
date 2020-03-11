@@ -56,10 +56,10 @@
 
   &--components {
     background-image: url("../../img/light-desktop.jpg");
-  }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/light-desktop@2x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/light-desktop@2x.jpg");
+    }
   }
 }
 

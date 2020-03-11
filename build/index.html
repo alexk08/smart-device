@@ -54,6 +54,7 @@
 </symbol></svg>
   </div>
   <header class="page-header">
+    <h1 class="visually-hidden">Сервисная IT компания Smart Device</h1>
     <div class="page-header__top-row">
       <a class="page-header__logo logo logo--header">
         <img src="img/logo.svg" alt="Логотип компании Smart Device" width="52" height="52">
@@ -89,7 +90,6 @@
     </div>
   </header>
   <main class="main-content">
-    <h1 class="visually-hidden">Сервисная IT компания Smart Device</h1>
     <div class="wrapper">
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -165,7 +165,63 @@
       </div>
     </section>
     <section class="feedback">
-      <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+      <div class="container">
+        <div class="inner">
+          <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+          <p class="feedback__lead">Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="feedback__row feedback__row--top">
+              <p>
+                <input class="feedback__input feedback__input--name" type="text" name="name" id="name-field" placeholder="Имя">
+                <label class="visually-hidden" for="name-field">Введите ваше имя</label>
+              </p>
+              <p>
+                <input class="feedback__input feedback__input--phone" type="tel" name="phone" id="phone-field" placeholder="Телефон">
+                <label class="visually-hidden" for="phone-field">Введите ваше номер телефона</label>
+              </p>
+            </div>
+            <div class="feedback__message">
+              <textarea class="feedback__text-message" name="message" id="message-field" placeholder="Ваш вопрос"></textarea>
+              <label class="visually-hidden" for="message-field">Задайте ваш вопрос</label>
+            </div>
+            <div class="feedback__row feedback__row--bottom">
+              <p>
+                <button class="feedback__submit button" type="submit">Задать вопрос</button>
+              </p>
+              <p>
+                <input class="feedback__consent-checkbox visually-hidden" type="checkbox" name="consent" id="consent-checkbox" checked="">
+                <label class="feedback__consent-label" for="consent-checkbox">Я согласен на обработку  персональных данных</label>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="modal-callback">
+      <h2 class="modal-callback__title">Закажите звонок</h2>
+      <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-callback__lead">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</div>
+        <p>
+          <input class="modal-callback__input modal-callback__input--name" type="text" name="name" id="callback-name" placeholder="Имя">
+          <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
+        </p>
+        <p>
+          <input class="modal-callback__input modal-callback__input--phone" type="tel" name="phone" id="callback-phone" placeholder="Телефон">
+          <label for="callback-phone" class="visually-hidden">Введите ваше номер телефона</label>
+        </p>
+        <p>
+          <textarea class="modal-callback__input modal-callback__input--message" name="message" id="callback-message" placeholder="Ваш вопрос"></textarea>
+          <label for="callback-message" class="visually-hidden">Задайте ваш вопрос</label>
+        </p>
+        <p>
+          <button class="modal-callback__submit button" type="submit">Отправить</button>
+        </p>
+        <p>
+          <input class="modal-callback__consent-checkbox visually-hidden" type="checkbox" name="consent" id="callback-consent" checked="">
+          <label class="modal-callback__consent-label" for="callback-consent">Я согласен на обработку  персональных данных</label>
+        </p>
+      </form>
+      <button class="modal-callback__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </main>
   <footer class="page-footer">
@@ -257,5 +313,7 @@
       <a href="#" class="copyright__developers">Developed by WOW Studio</a>
     </div>
   </footer>
+  <div class="overlay"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>
