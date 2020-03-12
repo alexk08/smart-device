@@ -62,14 +62,20 @@ img {
   .js-accordion-button {
     display: block;
 
-    background-color: transparent;
-    border: none;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    width: 17px;
-    height: 17px;
-    position: relative;
+    padding: 30px 0 25px;
+    border: none;
 
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    text-align: left;
+
+    background-color: transparent;
+
+    position: relative;
     cursor: pointer;
 
     &::before {
@@ -77,7 +83,7 @@ img {
 
       position: absolute;
       right: 0;
-      top: 8px;
+      top: 37px;
 
       width: 17px;
       height: 1px;
@@ -102,7 +108,7 @@ img {
 
       position: absolute;
       right: 8px;
-      top: 0;
+      top: 29px;
       width: 1px;
       height: 17px;
 

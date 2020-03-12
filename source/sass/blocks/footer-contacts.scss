@@ -48,7 +48,7 @@
 
 @media (max-width: $mobile-max-width) {
   .footer-contacts {
-    padding: 30px 15px 26px;
+    padding: 0 15px;
     min-width: unset;
   }
 
@@ -60,12 +60,12 @@
   }
 
   .footer-contacts__title {
-    padding-left: 0;
-    margin-bottom: 0;
+    display: none;
   }
 
   .footer-contacts__text {
-    padding-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 25px;
     max-width: 290px;
     margin: 0 auto;
   }
