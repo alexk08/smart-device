@@ -44,6 +44,10 @@ img {
   overflow-y: hidden;
 }
 
+.js-accordion-button {
+  display: none;
+}
+
 @media (max-width: $tablet-max-width) {
   .js-modal-open {
     overflow-y: visible;
@@ -53,5 +57,61 @@ img {
 @media (max-width: $mobile-max-width) {
   .js-modal-open {
     overflow-y: visible;
+  }
+
+  .js-accordion-button {
+    display: block;
+
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    position: relative;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      top: 8px;
+
+      width: 17px;
+      height: 1px;
+
+      background-color: $bg-dark;
+      opacity: 0.5;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      opacity: 1;
+    }
+
+    &:active::before {
+      opacity: 0.75;
+    }
+  }
+
+  .js-accordion-item-close .js-accordion-button {
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 8px;
+      top: 0;
+      width: 1px;
+      height: 17px;
+
+      background-color: $bg-dark;
+      opacity: 0.5;
+    }
+
+    &:active::after {
+      opacity: 0.75;
+    }
   }
 }

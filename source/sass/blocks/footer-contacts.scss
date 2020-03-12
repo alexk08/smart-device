@@ -74,6 +74,10 @@
     letter-spacing: 0.1px;
   }
 
+  .js-accordion-item-close .footer-contacts__text {
+    display: none;
+  }
+
   .footer-contacts__text.no-js {
     display: block;
   }

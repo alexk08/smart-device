@@ -79,35 +79,32 @@
 
   formCallback.addEventListener('submit', onFormSubmit);
 
-  var menuFooterNav = document.querySelector('.footer-nav__list');
-  var menuFooterContacts = document.querySelector('.footer-contacts__text');
   var navElement = document.querySelector('.footer-nav');
   var contactsElement = document.querySelector('.footer-contacts');
 
-  menuFooterNav.classList.remove('no-js');
-  menuFooterContacts.classList.remove('no-js');
+  navElement.classList.remove('no-js');
+  contactsElement.classList.remove('no-js');
+
+  var toggleAccodionItem = function (clickedElement, nextElement, evt) {
+    if (evt.target.classList.contains('js-accordion-button')) {
+      clickedElement.classList.toggle('js-accordion-item-close');
+      nextElement.classList.add('js-accordion-item-close');
+    }
+  };
 
   navElement.addEventListener('click', function (evt) {
-    if (evt.target.classList.contains('button-menu')) {
-      console.log(evt.target);
-      menuFooterNav.classList.toggle('menu-close');
-      menuFooterContacts.classList.add('menu-close');
-    }
+    toggleAccodionItem(navElement, contactsElement, evt);
   });
 
   contactsElement.addEventListener('click', function (evt) {
-    console.log(evt.target);
-    if (evt.target.classList.contains('button-menu')) {
-      menuFooterContacts.classList.toggle('menu-close');
-      menuFooterNav.classList.add('menu-close');
-    }
+    toggleAccodionItem(contactsElement, navElement, evt);
   });
 
   var feedbackPhone = document.querySelector('.feedback__input--phone');
   var modalPhone = document.querySelector('.modal-callback__input--phone');
   var mask = {
     mask: '+{7}(000)000-00-00',
-  }
+  };
 
   IMask(feedbackPhone, mask);
   IMask(modalPhone, mask);
