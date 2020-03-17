@@ -3,12 +3,12 @@
   padding: 0 25px 110px;
   margin: 0 auto;
 
-  background-image: url("../../img/2005-desktop.png");
+  background-image: url("../img/2005-desktop.png");
   background-repeat: no-repeat;
   background-position: -5px 5px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/2005-desktop@2x.png");
+    background-image: url("../img/2005-desktop@2x.png");
     background-size: 220px auto;
   }
 }
@@ -52,13 +52,13 @@
 
 @media (max-width: $tablet-max-width) {
   .about-us {
-    background-image: url("../../img/2005-tablet.png");
+    background-image: url("../img/2005-tablet.png");
     background-position: 0 0;
 
     padding-bottom: 84px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/2005-tablet@2x.png");
+      background-image: url("../img/2005-tablet@2x.png");
       background-size: 244px auto;
     }
   }

@@ -1,6 +1,6 @@
 .feedback {
   background-color: $blue;
-  background-image: url("../../img/triangles-form.svg");
+  background-image: url("../img/triangles-form.svg");
   background-repeat: no-repeat;
   background-position: 174px -60px;
 }
@@ -14,12 +14,12 @@
   justify-content: flex-end;
   align-items: stretch;
 
-  background-image: url("../../img/airplane-desktop.png");
+  background-image: url("../img/airplane-desktop.png");
   background-repeat: no-repeat;
   background-position: 0 160px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/airplane-desktop@2x.png");
+    background-image: url("../img/airplane-desktop@2x.png");
     background-size: 511px auto;
   }
 }
@@ -110,6 +110,11 @@
   }
 }
 
+.feedback__consent-checkbox {
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
 .feedback__consent-label {
   display: block;
   padding-top: 10px;
@@ -120,6 +125,7 @@
   color: $white-opacity;
 
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -141,7 +147,7 @@
   width: 10px;
   height: 7px;
 
-  background-image: url("../../img/mark.svg");
+  background-image: url("../img/mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 

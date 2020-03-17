@@ -4,7 +4,7 @@
 
 .services .inner {
   margin: 0 auto;
-  padding: 88px 25px 127px;
+  padding: 88px 25px 81px;
   max-width: 1220px;
 }
 
@@ -25,6 +25,8 @@
   padding: 0;
 
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .services__item {
@@ -33,38 +35,41 @@
 
   max-width: 370px;
   width: 32%;
+  margin-right: 2%;
+  margin-bottom: 46px;
 
+  background-color: $grey;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   &--production {
-    background-image: url("../../img/production-desktop.jpg");
+    background-image: url("../img/production-desktop.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-desktop@2x.jpg");
+      background-image: url("../img/production-desktop@2x.jpg");
     }
   }
 
   &--install {
-    background-image: url("../../img/install-desktop.jpg");
+    background-image: url("../img/install-desktop.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/install-desktop@2x.jpg");
+      background-image: url("../img/install-desktop@2x.jpg");
     }
   }
 
   &--components {
-    background-image: url("../../img/light-desktop.jpg");
+    background-image: url("../img/light-desktop.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/light-desktop@2x.jpg");
+      background-image: url("../img/light-desktop@2x.jpg");
     }
   }
 }
 
-.services__item:not(:last-child) {
-  margin-right: 30px;
+.services__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .services__link {
@@ -100,7 +105,7 @@
     position: absolute;
     right: 22px;
     bottom: 26px;
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -133,35 +138,31 @@
   .services__item {
     max-width: none;
     width: auto;
-    margin-bottom: 46px;
+    margin-right: 0;
 
     &--production {
-      background-image: url("../../img/production-tablet.jpg");
+      background-image: url("../img/production-tablet.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/production-tablet@2x.jpg");
+        background-image: url("../img/production-tablet@2x.jpg");
       }
     }
 
     &--install {
-      background-image: url("../../img/install-tablet.jpg");
+      background-image: url("../img/install-tablet.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/install-tablet@2x.jpg");
+        background-image: url("../img/install-tablet@2x.jpg");
       }
     }
 
     &--components {
-      background-image: url("../../img/light-tablet.jpg");
+      background-image: url("../img/light-tablet.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/light-tablet@2x.jpg");
+        background-image: url("../img/light-tablet@2x.jpg");
       }
     }
-  }
-
-  .services__item:not(:last-child) {
-    margin-right: 0;
   }
 
   .services__link {
@@ -191,26 +192,26 @@
     margin-bottom: 30px;
 
     &--production {
-      background-image: url("../../img/production-mobile.jpg");
+      background-image: url("../img/production-mobile.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/production-mobile@2x.jpg");
+        background-image: url("../img/production-mobile@2x.jpg");
       }
     }
 
     &--install {
-      background-image: url("../../img/install-mobile.jpg");
+      background-image: url("../img/install-mobile.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/install-mobile@2x.jpg");
+        background-image: url("../img/install-mobile@2x.jpg");
       }
     }
 
     &--components {
-      background-image: url("../../img/light-mobile.jpg");
+      background-image: url("../img/light-mobile.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/light-mobile@2x.jpg");
+        background-image: url("../img/light-mobile@2x.jpg");
       }
     }
   }

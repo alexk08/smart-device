@@ -4,9 +4,16 @@
   margin: 0;
 
   display: flex;
-  width: 112px;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.socials__item {
+  margin-right: 15px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__link svg {

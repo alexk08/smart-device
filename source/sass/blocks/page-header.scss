@@ -1,6 +1,6 @@
 .page-header {
   background-color: $bg-dark;
-  background-image: url("../../img/bg-top-desktop.png");
+  background-image: url("../img/bg-top-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,7 +87,7 @@
 
 @media (max-width: $tablet-max-width) {
   .page-header {
-    background-image: url("../../img/bg-top-tablet.png");
+    background-image: url("../img/bg-top-tablet.png");
   }
 
   .page-header__top-row {
@@ -124,7 +124,7 @@
 @media (max-width: $mobile-max-width) {
   .page-header {
     padding-bottom: 41px;
-    background-image: url("../../img/bg-top-mobile.png");
+    background-image: url("../img/bg-top-mobile.png");
   }
 
   .page-header__top-row {

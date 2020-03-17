@@ -1,7 +1,10 @@
 .page-footer {
+  flex: 0 0 auto;
+
   font-size: 13px;
   line-height: 24px;
   color: $bg-dark;
+
   background-color: $bg-light;
 }
 
@@ -21,6 +24,10 @@
 
 .page-footer__top-row .inner {
   min-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .page-footer__company {
@@ -72,7 +79,7 @@
   }
 
   .page-footer__top-row .inner {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     min-width: 720px;
