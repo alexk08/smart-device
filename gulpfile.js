@@ -99,3 +99,11 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+
+const ghPages = require('gh-pages');
+const path = require('path');
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
